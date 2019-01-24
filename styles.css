@@ -121,17 +121,41 @@ tbody td {
   background-color: rgba(166, 53, 151, 0.3);
 }
 
+.hide-for-desktop {
+  display: none;
+}
+
+.additional-table-desc {
+  font-size: 0.8em;
+}
+
+th[colspan="2"] {
+  text-align: center;
+}
+
 @media only screen and (max-width: 800px) {
   table tbody th:first-child {
     width: none;
   }
 
-  .small {
+  table {
+    max-width: 500px;
+  }
+
+  .ensure-spacing {
     border-top: 2em solid var(--color-background);
   }
 
   .comparison-table .comparison-table-key,
   .comparison-table .comparison-table-value {
     border-left: none;
+  }
+
+  .hide-for-desktop {
+    display: inline-block;
+  }
+
+  .hide-for-mobile {
+    display: none;
   }
 }
