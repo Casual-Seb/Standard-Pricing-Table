@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Vertikal Helse</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="sass/styles.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <div>
       <table class="comparison-table">
         <thead>
@@ -18,8 +20,12 @@
             <th class="comparison-table-key"></th>
             <th class="comparison-table-key bg-yellow">Barn</th>
             <th class="comparison-table-key bg-dark-yellow">Ung</th>
-            <th class="comparison-table-key bg-washed-orange">Voksen Standard</th>
-            <th class="comparison-table-key bg-washed-purple">Voksen Komplett</th>
+            <th class="comparison-table-key bg-washed-orange">
+              Voksen Standard
+            </th>
+            <th class="comparison-table-key bg-washed-purple">
+              Voksen Komplett
+            </th>
             <th class="comparison-table-key bg-purple">Senior</th>
           </tr>
         </thead>
@@ -27,40 +33,165 @@
           <tr>
             <th>Alder</th>
             <td class="comparison-table-value bg-yellow-opaque">0 - 20</td>
-            <div class="wrapper"></div>
-            <td class="comparison-table-value bg-dark-yellow-opaque">21 - 34</td>
-            <td class="comparison-table-value bg-washed-orange-opaque">35 - 59</td>
-            <td class="comparison-table-value bg-washed-purple-opaque">35 - 59</td>
+            <td class="comparison-table-value bg-dark-yellow-opaque">
+              21 - 34
+            </td>
+            <td class="comparison-table-value bg-washed-orange-opaque">
+              35 - 59
+            </td>
+            <td class="comparison-table-value bg-washed-purple-opaque">
+              35 - 59
+            </td>
             <td class="comparison-table-value bg-purple-opaque">60 - 75</td>
+          </tr>
+          <tr>
+            <th>Behandlingsgaranti (antall dager)</th>
+            <td class="comparison-table-value bg-yellow-opaque">10 + 20</td>
+            <td class="comparison-table-value bg-dark-yellow-opaque">
+              10 + 20
+            </td>
+            <td class="comparison-table-value bg-washed-orange-opaque">
+              10 + 20
+            </td>
+            <td class="comparison-table-value bg-washed-purple-opaque">
+              10 + 7 + 5*
+            </td>
+            <td class="comparison-table-value bg-purple-opaque">10 + 20</td>
           </tr>
           <tr>
             <th><b>Pris</b></th>
             <td class="comparison-table-value bg-yellow-opaque">123 kr</td>
             <td class="comparison-table-value bg-dark-yellow-opaque">154 kr</td>
-            <td class="comparison-table-value bg-washed-orange-opaque">309 kr</td>
-            <td class="comparison-table-value bg-washed-purple-opaque">516 kr</td>
+            <td class="comparison-table-value bg-washed-orange-opaque">
+              309 kr
+            </td>
+            <td class="comparison-table-value bg-washed-purple-opaque">
+              516 kr
+            </td>
+            <td class="comparison-table-value bg-purple-opaque">672 kr</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="description">* Inkludert 5 timer fysisk behandling</p>
+
+      <table class="comparison-table">
+        <tbody class="small">
+          <tr>
+            <th></th>
+            <th class="comparison-table-key bg-yellow">Barn</th>
+          </tr>
+          <tr class="key">
+            <th>Alder</th>
+            <td class="comparison-table-value bg-yellow-opaque">0 - 20</td>
+          </tr>
+          <tr class="key">
+            <th>Behandlingsgaranti</th>
+            <td class="comparison-table-value bg-yellow-opaque">10 + 20</td>
+          </tr>
+          <tr class="key">
+            <th><b>Pris</b></th>
+            <td class="comparison-table-value bg-yellow-opaque">123 kr</td>
+          </tr>
+        </tbody>
+        <!-- End -->
+        <tbody class="small">
+          <tr>
+            <th></th>
+            <th class="comparison-table-key bg-dark-yellow">Ung</th>
+          </tr>
+          <tr class="key">
+            <th>Alder</th>
+            <td class="comparison-table-value bg-dark-yellow-opaque">
+              21 - 34
+            </td>
+          </tr>
+          <tr class="key">
+            <th>Behandlingsgaranti</th>
+            <td class="comparison-table-value bg-dark-yellow-opaque">
+              10 + 20
+            </td>
+          </tr>
+          <tr class="key">
+            <th><b>Pris</b></th>
+            <td class="comparison-table-value bg-dark-yellow-opaque">154 kr</td>
+          </tr>
+        </tbody>
+        <!-- End -->
+        <tbody class="small">
+          <tr>
+            <th></th>
+            <th class="comparison-table-key bg-washed-orange">
+              Voksen Standard
+            </th>
+          </tr>
+          <tr class="key">
+            <th>Alder</th>
+            <td class="comparison-table-value bg-washed-orange-opaque">
+              35 - 59
+            </td>
+          </tr>
+          <tr class="key">
+            <th>Behandlingsgaranti</th>
+            <td class="comparison-table-value bg-washed-orange-opaque">
+              10 + 20
+            </td>
+          </tr>
+          <tr class="key">
+            <th><b>Pris</b></th>
+            <td class="comparison-table-value bg-washed-orange-opaque">
+              309 kr
+            </td>
+          </tr>
+        </tbody>
+        <!-- End -->
+        <tbody class="small">
+          <tr>
+            <th></th>
+            <th class="comparison-table-key bg-washed-purple">
+              Voksen Komplett
+            </th>
+          </tr>
+          <tr class="key">
+            <th>Alder</th>
+            <td class="comparison-table-value bg-washed-purple-opaque">
+              35 - 59
+            </td>
+          </tr>
+          <tr class="key">
+            <th>Behandlingsgaranti</th>
+            <td class="comparison-table-value bg-washed-purple-opaque">
+              10 + 7 + 5
+            </td>
+          </tr>
+          <tr class="key">
+            <th><b>Pris</b></th>
+            <td class="comparison-table-value bg-washed-purple-opaque">
+              516 kr
+            </td>
+          </tr>
+        </tbody>
+
+        <!-- End -->
+        <tbody class="small">
+          <tr>
+            <th></th>
+            <th class="comparison-table-key bg-purple">Senior</th>
+          </tr>
+          <tr class="key">
+            <th>Alder</th>
+            <td class="comparison-table-value bg-purple-opaque">60 - 75</td>
+          </tr>
+          <tr class="key">
+            <th>Behandlingsgaranti</th>
+            <td class="comparison-table-value bg-purple-opaque">10 + 20</td>
+          </tr>
+          <tr class="key">
+            <th><b>Pris</b></th>
             <td class="comparison-table-value bg-purple-opaque">672 kr</td>
           </tr>
         </tbody>
       </table>
     </div>
-
-    <!-- <div class="carousel">
-      <button class="carousel-button">Left</button>
-      <div class="carousel-track-container">
-          <ul class="carousel-track">
-            <li class="carousel-slide"><a href="#" class="bg-yellow"> </a></li>
-            <li class="carousel-slide"><a href="#" class="bg-washed-orange"> </a></li>
-            <li class="carousel-slide"><a href="#" class="bg-purple"> </a></li>
-          </ul>
-      </div>
-      <button class="carousel-button">Right</button>
-      <nav class="carousel-dots">
-        <button class="carousel-dot is_selected"></button>
-        <button class="carousel-dot"></button>
-        <button class="carousel-dot"></button>
-      </nav>
-    </div>
-  <script src="main.js"></script> -->
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>

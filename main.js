@@ -1,9 +1,5 @@
-const track = document.querySelector('.carousel-track');
-const slides = Array.from(track.children);
+function getWidth() {
+  return window.innerWidth || document.body.clientWidth;
+}
 
-const rect = slides[0].getBoundingClientRect();
-const slideWidth = rect.width;
-
-slides.forEach((slide, index) => {
-    slide.style.left = slideWidth * index + 'px';
-});
+console.log(getWidth());

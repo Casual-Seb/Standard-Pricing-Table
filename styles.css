@@ -54,10 +54,6 @@ tbody td {
   height: 50px;
 }
 
-.comparison-table td,
-.comparison-table th {
-}
-
 .comparison-table th:first-child {
   position: relative;
 }
@@ -130,98 +126,12 @@ tbody td {
     width: none;
   }
 
+  .small {
+    border-top: 2em solid var(--color-background);
+  }
+
   .comparison-table .comparison-table-key,
   .comparison-table .comparison-table-value {
     border-left: none;
   }
 }
-
-/* Carousel */
-
-/* :root {
-  --color-default-state: grey;
-  --color-hover-state: rgb(107, 107, 195);
-  --color-selected-state: rgb(17, 26, 101);
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.carousel {
-  display: grid;
-  grid-template-columns: 3em 1fr 3em;
-  grid-template-rows: 70vh 3em;
-  align-items: center;
-  grid-gap: 1em;
-  width: 80vw;
-}
-
-.carousel-track-container {
-  grid-column: 2;
-  align-self: stretch;
-}
-
-.carousel-track {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.carousel-slide {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.carousel-slide > a {
-  display: block;
-  width: inherit;
-  height: inherit;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-/* Buttons */
-
-/* .carousel-button svg {
-  fill: var(--color-default-state);
-}
-
-.carousel-button:hover svg {
-  fill: var(--color-hover-state);
-} */
-
-/* Dots */
-/*
-.carousel-nav {
-  grid-column: 1 / -1;
-  justify-self: center;
-}
-
-.carousel-dot {
-  width: 1em;
-  height: 1em;
-  border-radius: 100%;
-  background-color: var(--color-default-state);
-}
-
-.carousel-dot + .carousel-dot {
-  margin-left: 1em;
-}
-
-.carousel-dot:hover {
-  background-color: var(--color-hover-state);
-}
-
-.carousel-dot.is-selected {
-  background-color: var(--color-selected-state);
-} */
