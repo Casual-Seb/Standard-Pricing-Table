@@ -1,46 +1,57 @@
+:root {
+  --color-default-state: grey;
+  --color-second-state: #d7cfc3;
+  --color-background: #f7f6f0;
+  --color-yellow: #ffd35f;
+  --color-dark-yellow: #ffc82c;
+  --color-washed-orange: #e79d54;
+  --color-washed-purple: #c675b8;
+  --color-purple: #a63597;
+}
+
 body {
-    background-color: #f7f6f0;
-    font-family: 'Open Sans', sans-serif;
+  background-color: var(--color-background);
+  font-family: "Open Sans", sans-serif;
 }
 
 table {
-    border-spacing: 0;
-    border-collapse: collapse;
+  border-spacing: 0;
+  border-collapse: collapse;
 }
 
 th,
 td {
-    text-align: center;
-    padding: 15px;
+  text-align: center;
+  padding: 15px;
 }
 
 table tbody th:first-child {
-    font-weight: 100;
-    width: 30%;
-    text-align: left;
-    font-size: 0.9em;
+  font-weight: 100;
+  width: 30%;
+  text-align: left;
+  font-size: 0.9em;
 }
 
 thead th {
-    min-width: 100px;
-    text-align: center;
+  min-width: 100px;
+  text-align: center;
 }
 
 tbody td {
-    text-align: center;
+  text-align: center;
 }
 
 .comparison-table {
-    overflow: hidden;
-    table-layout: fixed;
+  overflow: hidden;
+  table-layout: fixed;
 }
 
 .comparison-table .comparison-table-key:first-child {
-    font-weight: 100;
-    text-align: left;
-    font-size: 1em;
-    line-height: 1.5em;
-    height: 50px;
+  font-weight: 100;
+  text-align: left;
+  font-size: 1em;
+  line-height: 1.5em;
+  height: 50px;
 }
 
 .comparison-table td,
@@ -48,81 +59,81 @@ tbody td {
 }
 
 .comparison-table th:first-child {
-    position: relative;
+  position: relative;
 }
 
 .comparison-table th:first-child:after {
-    position: absolute;
-    content: ' ';
-    left: 0;
-    right: -100vw;
-    bottom: 0;
-    border-bottom: 1px solid #d7cfc3;
+  position: absolute;
+  content: " ";
+  left: 0;
+  right: -100vw;
+  bottom: 0;
+  border-bottom: 1px solid var(--color-second-state);
 }
 
 .comparison-table .comparison-table-key,
 .comparison-table .comparison-table-value {
-    border-left: 10px solid #f7f6f0;
+  border-left: 10px solid var(--color-background);
 }
 
 .comparison-table-key {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 .comparison-table-value {
-    font-size: 0.9em;
-    color: #4c4c4b;
+  font-size: 0.9em;
+  color: #4c4c4b;
 }
 
 .bg-yellow {
-    background-color: #ffd35f;
+  background-color: var(--color-yellow);
 }
 
 .bg-yellow-opaque {
-    background-color: rgba(255, 211, 95, 0.3);
+  background-color: rgba(255, 211, 95, 0.3);
 }
 
 .bg-dark-yellow {
-    background-color: #ffc82c;
+  background-color: var(--color-dark-yellow);
 }
 
 .bg-dark-yellow-opaque {
-    background-color: rgba(255, 200, 44, 0.3);
+  background-color: rgba(255, 200, 44, 0.3);
 }
 
 .bg-washed-orange {
-    background-color: #e79d54;
+  background-color: var(--color-washed-orange);
 }
 
 .bg-washed-orange-opaque {
-    background-color: rgba(231, 157, 84, 0.3);
+  background-color: rgba(231, 157, 84, 0.3);
 }
 
 .bg-washed-purple {
-    background-color: #c675b8;
+  background-color: var(--color-washed-purple);
 }
 
 .bg-washed-purple-opaque {
-    background-color: rgba(198, 117, 184, 0.3);
+  background-color: rgba(198, 117, 184, 0.3);
 }
 
 .bg-purple {
-    background-color: #a63597;
+  background-color: var(--color-purple);
 }
 
 .bg-purple-opaque {
-    background-color: rgba(166, 53, 151, 0.3);
+  background-color: rgba(166, 53, 151, 0.3);
 }
 
 @media only screen and (max-width: 800px) {
-    table tbody th:first-child {
-        width: none;
-    }
+  table tbody th:first-child {
+    width: none;
+  }
 
-    .comparison-table .comparison-table-key,
-    .comparison-table .comparison-table-value {
-        border-left: none;
-    }
+  .comparison-table .comparison-table-key,
+  .comparison-table .comparison-table-value {
+    border-left: none;
+  }
 }
 
 /* Carousel */
